@@ -6,19 +6,19 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>wangke</title>
+  <title>first bogle | wangke</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="java面试题（一） object类有什么方法？  clone保护方法，实现对象的浅复制，只有实现了Cloneable接口才可以调用方法 getClass获得运行时类型 tostring finalize释放资源 equals hashCode哈希查找 wait，notify，notifyAll   结构化程序设计的三种基本结构？ 顺序，选择，结构 - 结构清晰，易阅读  按值传递与按引用传递 j">
+  <meta name="description" content="第一个demo">
 <meta property="og:type" content="article">
-<meta property="og:title" content="wangke">
-<meta property="og:url" content="http://yoursite.com/2019/09/07/java面试题（一）/index.html">
+<meta property="og:title" content="first bogle">
+<meta property="og:url" content="http://yoursite.com/2019/09/07/first-bogle/index.html">
 <meta property="og:site_name" content="wangke">
-<meta property="og:description" content="java面试题（一） object类有什么方法？  clone保护方法，实现对象的浅复制，只有实现了Cloneable接口才可以调用方法 getClass获得运行时类型 tostring finalize释放资源 equals hashCode哈希查找 wait，notify，notifyAll   结构化程序设计的三种基本结构？ 顺序，选择，结构 - 结构清晰，易阅读  按值传递与按引用传递 j">
+<meta property="og:description" content="第一个demo">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2019-09-05T07:30:48.452Z">
+<meta property="og:updated_time" content="2019-09-07T12:58:08.032Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="wangke">
-<meta name="twitter:description" content="java面试题（一） object类有什么方法？  clone保护方法，实现对象的浅复制，只有实现了Cloneable接口才可以调用方法 getClass获得运行时类型 tostring finalize释放资源 equals hashCode哈希查找 wait，notify，notifyAll   结构化程序设计的三种基本结构？ 顺序，选择，结构 - 结构清晰，易阅读  按值传递与按引用传递 j">
+<meta name="twitter:title" content="first bogle">
+<meta name="twitter:description" content="第一个demo">
   
     <link rel="alternative" href="/atom.xml" title="wangke" type="application/atom+xml">
   
@@ -154,237 +154,27 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-java面试题（一）" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-first-bogle" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      first bogle
+    </h1>
+  
+
+        
+        <a href="/2019/09/07/first-bogle/" class="archive-article-date">
+  	<time datetime="2019-09-07T12:57:11.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-09-07</time>
+</a>
+        
+      </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="java面试题（一）"><a href="#java面试题（一）" class="headerlink" title="java面试题（一）"></a>java面试题（一）</h1><ol>
-<li><p>object类有什么方法？</p>
-<ul>
-<li>clone保护方法，实现对象的浅复制，只有实现了Cloneable接口才可以调用方法</li>
-<li>getClass获得运行时类型</li>
-<li>tostring</li>
-<li>finalize释放资源</li>
-<li>equals</li>
-<li>hashCode哈希查找</li>
-<li>wait，notify，notifyAll</li>
-</ul>
-</li>
-<li><p>结构化程序设计的三种基本结构？</p>
-<p>顺序，选择，结构 - 结构清晰，易阅读</p>
-</li>
-<li><p>按值传递与按引用传递</p>
-<p>java的基本数据类型和这种String（String str=“java）是按值传递，其他都是按引用传递</p>
-</li>
-<li><p>递归相关</p>
-</li>
-<li><p>jsp有哪些内置对象？</p>
-<p><strong>九内四域</strong></p>
-<ul>
-<li><p>Page：jsp被翻译成Servlet的对象引用</p>
-</li>
-<li><p>pageContext：域对象</p>
-</li>
-<li><p>request:请求对象</p>
-</li>
-<li><p>Respond：响应对象</p>
-</li>
-<li><p>Session：会话，可以作为域对象，一次会话有效</p>
-</li>
-<li><p>Application：整个应用范围</p>
-</li>
-<li><p>Out：输出对象</p>
-</li>
-<li><p>config：配置对象</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">page域：只能在当前JSP页面使用 （当前页面）</span><br><span class="line">request域：只能在一个请求中请求（转发）</span><br><span class="line">session域：只能在一次会话（session对象）中使用（私有的）</span><br><span class="line">context域：在一个web应用中使用（全局）</span><br></pre></td></tr></table></figure>
-
-<p>​</p>
-</li>
-</ul>
-</li>
-<li><p>抽象类是否可以实现接口，抽象类是否可以继承实体类？</p>
-<p>可以，可以</p>
-</li>
-<li><p>ActionContext，servletContext，pageContext的区别？</p>
-<ul>
-<li>ActionContext是当前的Action上下文环境可以获取到 request，session，ServletContext等有关对象的引用</li>
-<li>ServletContext是域对象只有一个，生命周期伴随整个web应用</li>
-<li>pageContext是jsp中最重要的一个内置对象，只对当前也有效，页面结束时被销毁</li>
-</ul>
-</li>
-<li><p>SpringMVC与Ajax的互调？</p>
-</li>
-<li><p>连接池的工作机制？</p>
-<p>连接池在创建的时候，将一定数量的数据库连接放入到连接池中，这些数据库连接数量是由最小连接数来设定的。无论这些连接有没有使用，连接池都保证只少拥有怎么多数量，最大连接数限定了这个线程池能占有的最大的连接数，当链接数量超过最大连接数时，这些请求将被加到等待队列中。</p>
-</li>
-<li><p>char占几个字符？</p>
-<p>与编码格式有关 gbk：2 utf-8:3 默认unicode：2</p>
-</li>
-<li><p>servlet有哪些方法？</p>
-<p>init（），service（），destory（）</p>
-</li>
-<li><p>List，Set，Map，Queue的线程安全性？</p>
-<p>除了Vector与Hashtable，其他都不安全</p>
-</li>
-<li><p>Spring的事务传递行为都有哪些和区别？</p>
-</li>
-<li><p>Redis 的常用命令与支持的数据类型</p>
-</li>
-<li><p>什么是缓存雪崩，如何避免</p>
-<ul>
-<li>缓存穿透：查询一个缓存不存在的数据，所以就要从数据库中查询。导致每次都要到数据库中查询，造成缓存穿透。</li>
-<li>缓存失效，所有的查询都落在数据库上，造成了雪崩。<ul>
-<li>解决方法：加锁排队，限流。</li>
-<li>数据yure</li>
-<li>二级缓存</li>
-<li>缓存永不过期</li>
-</ul>
-</li>
-</ul>
-</li>
-<li><p>常用的SQL优化</p>
-</li>
-<li><p>进位制转化</p>
-</li>
-<li><p>java应用发生OOM异常，有哪些原因，如何排查</p>
-</li>
-<li><p>BIO，NIO，AIO的区别</p>
-</li>
-<li><p>应用如何部署到Tomcat，tomcat集群如何搭建？多个Tomcat如何进行Session同步？</p>
-<p>放到webapp，server.xml配置</p>
-</li>
-<li><p>spring如何实现犯法的性能监控，列如统计方法的执行时长？</p>
-</li>
-<li><p>webservice的简单介绍？</p>
-<p>是一种跨语言和系统的远程调用技术，通过web进行调用的API</p>
-</li>
-<li><p>shiro的理解</p>
-<p>安全框架</p>
-</li>
-<li><p>jdk8的新特性</p>
-<p>Lambda，方法引用，函数式接口，stream，Optional，新的日期API</p>
-</li>
-<li><p>如何解决高并发与高负载</p>
-<p>静态化，数据库集群，表散列及缓存，负载均衡</p>
-</li>
-<li><p>java的内存溢出是如何造成的</p>
-<p>内存泄漏：不被使用变量或对象还在内存中占有储存空间</p>
-<p>内存溢出：指程序申请内存时，没有足够的内存供申请者使用</p>
-<p>内存泄漏最终会导致内存溢出</p>
-<p>原因：静态类集合，各种连接，变量不合理的作用域，内部类持有外部类，改变hash值</p>
-</li>
-<li><p>String，StringBuilder，StringBuffer的区别</p>
-</li>
-<li><p>使用递归实现二分法</p>
-</li>
-<li><p>如何跳出当前的嵌套循环</p>
-</li>
-<li><p>汉字在UTF-8和GB2312字符集分别暂用几个字符？</p>
-<p>3，2</p>
-</li>
-<li><p>写出GB2312的字符串转化为UTF-8的字符串代码</p>
-<p>​</p>
-</li>
-<li><p>String s = new String（“JJJ”）；创建了几个字符串对象</p>
-</li>
-<li><p>举例一些会造成内存溢出的情况</p>
-</li>
-<li><p>百万级的表，有哪些方法优化查询效率</p>
-</li>
-<li><p>不稳定排序是哪个？</p>
-</li>
-<li><p>二叉树</p>
-</li>
-<li><p>B/S，C/S，CMS，ERP，SQL，RDB英文中文</p>
-<p>browser   Client </p>
-<p>ERP：Enterprise Resource Planning 企业资源计划</p>
-<p>CRM：Customer Relationship Management 客户关系管理</p>
-<p>CMS：Content Management System 内容管理系统 </p>
-<p>SQL：Structured Query Language 结构化查询语言</p>
-</li>
-<li><p>百盒测试一般用于什么测试？</p>
-<p>用于程序的内部系统</p>
-</li>
-<li><p>FPT的默认端口，HTTP的默认端口 </p>
-<ul>
-<li>http 8080</li>
-<li>socks 1080</li>
-<li>ftp 21</li>
-<li>Telnet 23</li>
-<li>http 443</li>
-</ul>
-</li>
-<li><p>代码还没引用的情况下创建一个内部类？</p>
-</li>
-<li><p>sizeOF是不是java关键字</p>
-</li>
-<li><p>写出mapper.xml根据id查询某个表的一条数据？</p>
-</li>
-<li><p>抽象类和接口的区别。</p>
-</li>
-<li><p>统计整数二进制表示1的个数</p>
-<p>   // n为自然数<br>​    public static int count(int n) {<br>​        int count = 0;<br>​        while (n &gt; 0) {<br>​            count++;<br>​            n = n &amp; (n - 1);<br>​        }<br>​        return count;<br>​    }</p>
-</li>
-<li><p>定义一个哈希表的成员和方法</p>
-</li>
-<li><p>遍历map集合</p>
-</li>
-<li><p>Java.io.File里面哪些方法</p>
-</li>
-<li><p>如何把List集合从后台传递到页面</p>
-</li>
-<li><p>delete和drop的区别</p>
-</li>
-<li><p>如何进行冲突管理</p>
-</li>
-<li><p>快捷键列举</p>
-</li>
-<li><p>什么是shell</p>
-</li>
-<li><p>遇到最难的问题有哪些，如何解决他们的，有什么收获？</p>
-</li>
-<li><p>常用的类，包，接口，异常，各7个</p>
-</li>
-<li><p>jsp中的两种跳转方式</p>
-</li>
-<li><p>业务并发时如何保持业务数据的一致性</p>
-</li>
-<li><p>如何实现自定义排序，java比价器</p>
-</li>
-<li><p>@requestbody与@RespondBody的意义与区别</p>
-</li>
-<li><p>如何获取当前月份有多少天？</p>
-</li>
-<li><p>Spring的interceptor如何实现的</p>
-</li>
-<li><p>java的8种基本数据类型</p>
-</li>
-<li><p>如何判断linux文件是否被篡改过？</p>
-</li>
-<li><p>TCp与UDP的区别，级对HTTP的理解</p>
-</li>
-<li><p>如何防止表单的重复提交</p>
-</li>
-<li><p>ajax如何改成同步</p>
-</li>
-<li><p>如何服务降级</p>
-</li>
-<li><p>负载均衡原理</p>
-</li>
-<li><p>索引的优点和缺点</p>
-</li>
-<li><p>分布式锁相关</p>
-</li>
-<li><p>http证书放在那里</p>
-</li>
-</ol>
-<p>后台管理系统:管理商品、订单、类目、商品规格属性、用户管理以及内容发布等功能。<br>前台系统:用户可以在前台系统中进行注册、登录、浏览商品、首页、下单等操作。</p>
-<p>会员系统:用户可以在该系统中查询已下的订单、收藏的商品、我的优惠券、团购等信息。<br>订单系统:</p>
-<p>搜索系统:</p>
-<p>会员登录系统:为多个系统之间</p>
-<p>“</p>
-
+        <h1 id="第一个demo"><a href="#第一个demo" class="headerlink" title="第一个demo"></a>第一个demo</h1>
       
 
       
@@ -468,7 +258,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2019/09/07/java面试题（一）/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2019/09/07/first-bogle/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -482,17 +272,8 @@
   
 <nav id="article-nav">
   
-    <a href="/2019/09/07/SSM整合相关/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          (no title)
-        
-      </div>
-    </a>
   
-  
-    <a href="/2019/09/07/java面试copy/" id="article-nav-older" class="article-nav-link-wrap">
+    <a href="/2019/09/07/简历提问相关准备/" id="article-nav-older" class="article-nav-link-wrap">
       <div class="article-nav-title"></div>
       <i class="icon-circle-right"></i>
     </a>
