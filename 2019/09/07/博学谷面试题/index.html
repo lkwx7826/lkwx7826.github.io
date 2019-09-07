@@ -8,13 +8,17 @@
   <link rel="dns-prefetch" href="http://yoursite.com">
   <title>Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
+  <meta name="description" content="博学谷面试题1.Spring是如何管理事务的，事务的管理机制？以及安全级别？  脏读：读到未提交的数据  不可重复读：两次读到的数据不一致  虚读/幻读：？？？ 隔离性：  读未提交：没有解决问题 读以提交：产生不可重复读，虚读（Oracle） 可重复读：虚读（mysql） 串行化：解决所有问题    级别越高，越安全，效率越低 编程式与声明式：AOP本质就是目标方法执行前后进行拦截。 2.如何防">
+<meta property="og:type" content="article">
 <meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://yoursite.com/index.html">
+<meta property="og:url" content="http://yoursite.com/2019/09/07/博学谷面试题/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="博学谷面试题1.Spring是如何管理事务的，事务的管理机制？以及安全级别？  脏读：读到未提交的数据  不可重复读：两次读到的数据不一致  虚读/幻读：？？？ 隔离性：  读未提交：没有解决问题 读以提交：产生不可重复读，虚读（Oracle） 可重复读：虚读（mysql） 串行化：解决所有问题    级别越高，越安全，效率越低 编程式与声明式：AOP本质就是目标方法执行前后进行拦截。 2.如何防">
 <meta property="og:locale" content="en">
+<meta property="og:updated_time" content="2019-08-09T10:49:14.343Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hexo">
+<meta name="twitter:description" content="博学谷面试题1.Spring是如何管理事务的，事务的管理机制？以及安全级别？  脏读：读到未提交的数据  不可重复读：两次读到的数据不一致  虚读/幻读：？？？ 隔离性：  读未提交：没有解决问题 读以提交：产生不可重复读，虚读（Oracle） 可重复读：虚读（mysql） 串行化：解决所有问题    级别越高，越安全，效率越低 编程式与声明式：AOP本质就是目标方法执行前后进行拦截。 2.如何防">
   
     <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -150,1161 +154,7 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-    <article id="post-简历提问相关准备" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h1 id="简历提问相关准备"><a href="#简历提问相关准备" class="headerlink" title="简历提问相关准备"></a>简历提问相关准备</h1><h2 id="技术相关"><a href="#技术相关" class="headerlink" title="技术相关"></a>技术相关</h2><ol>
-<li><p>简单说一说javascrip。</p>
-<p>js是一门运行在浏览器的脚本语言，用来增强用户与HTML的交互过程让页面有一些动态的效果，增强用户的体验。</p>
-<p>Dom：文档对象模型，控制html文档的内容</p>
-<ul>
-<li>document：文档象</li>
-<li>element：元素对象</li>
-<li>Attribute：属性对象</li>
-<li>Text：文本对象</li>
-<li>Comment：注释对象</li>
-</ul>
-<p>Bom：浏览器对象模型</p>
-<ul>
-<li>window：窗口对象</li>
-<li>navigator：浏览器对象</li>
-<li>sreeen：显示器对象</li>
-<li>location：地址栏对象</li>
-<li>history：历史纪录对象</li>
-</ul>
-</li>
-<li><p>说一说jQuery。</p>
-<p>一个js框架封装了js代码简化开发。</p>
-</li>
-<li><p>AngularJS的特点常用指令。</p>
-<p>mvc，双向绑定，依赖注入，模块化</p>
-<p>ng-app,ng- model,ng-init,ng-controller,ng-repeat</p>
-</li>
-<li><p>FreeMaker的用法和使用场景。</p>
-<p>Freemarker是一个用java编写的引擎模板基于模板来生成文本输出</p>
-<p>模板的四种元素：文本，注释，插值，ftl指令</p>
-<p>减少数据库的访问压力</p>
-</li>
-<li><p>Dubbo是什么，zookeeper是什么。</p>
-<p>Dubbox是一个分布式服务框架，dubbo致力于提高性能和透明化RPC的远程调用方案以及SOA服务治理方案。就是一个远程调用的分布式框架。</p>
-</li>
-<li><p>简单说说solr的如何使用的，有哪些应用场景。</p>
-<p>采用Spring data solr实现在要搜索的实体类中添加@File注解获取字段信息注入到solr索引库</p>
-<p>solr是如何和数据库交互的：</p>
-<ul>
-<li><p>将数据库进行<strong>分词</strong>后生成索引保存在<strong>solr服务</strong>中有三种方法：</p>
-<ul>
-<li>spring data solr</li>
-<li>solrJ客户端</li>
-<li>通过sorl服务的可视化界面dataimport插件配置data-config.xml文件</li>
-</ul>
-<p>redis缓存与数据库的一致性：</p>
-<p>先判断数据缓存是否存在，如果存在直接返回缓存好的数据，如果不存在就回去数据库中读取数据，并把数据缓存到Redise中。适用于数据量较大，但不经常更新的情况</p>
-</li>
-</ul>
-</li>
-<li><p>ActiveMq是干什么的有哪些使用场景。</p>
-<p>消息中间件，利用高效的消息传递机制进行平台无关的数据交流。并基于数据通信来进行分布式系统的集成。zookeeper负责服务地址的注册与查找。</p>
-<p>​</p>
-</li>
-<li><p>重点说说redis。</p>
-<p>springdataredise</p>
-<p>基于内存的高性能KV数据库</p>
-<p>优点：</p>
-<ul>
-<li>速度快</li>
-<li>数据类型丰富string，list，set，stored set，hash </li>
-<li>支持事务</li>
-</ul>
-<p>mysql优化：</p>
-<ul>
-<li>只要一行用limit 1；</li>
-<li>使用正确的存储引擎</li>
-<li>not exists 代替 not in</li>
-<li>操作符优化</li>
-<li>分库分表</li>
-</ul>
-</li>
-</ol>
-<h2 id="项目相关"><a href="#项目相关" class="headerlink" title="项目相关"></a>项目相关</h2><ol>
-<li><p>你这是个什么项目，满足了什么需求，有什么特点。</p>
-<p>友家生鲜是一个B2C的网上项目，该项目服务层主要分为商品服务，内容服务，订单服务以及搜索服务。web层主要以后台管理系统，会员系统，订单和搜索系统。而且本系统采用面向服务的分布式架构。降低了系统的耦合读提高了系统的扩展性及部署的灵活性。</p>
-</li>
-<li><p>谈谈你的项目架构，还有你负责的相关模块。</p>
-<p>我负责商品模块，以及后台管理模块的代码实现</p>
-<p>表有哪些字段：id，sellerid（商家id），name名称，是否上架market，是否审核，分类</p>
-<p>规格表，规格选项表</p>
-<p>​</p>
-</li>
-<li><p>你在开发时遇到了那些问题，你是如何解决它们的，并学到了什么</p>
-</li>
-</ol>
-<p>初学maven包导入问题，及pagehelper分页助手配置xml错误。</p>
-<p>@Transactional添加注解</p>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2019/09/07/简历提问相关准备/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-SSM整合相关" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h1 id="SSM整合相关"><a href="#SSM整合相关" class="headerlink" title="SSM整合相关"></a>SSM整合相关</h1><h2 id="1-JSON相关"><a href="#1-JSON相关" class="headerlink" title="1.JSON相关"></a>1.JSON相关</h2><p>解决返回值中文乱码：</p>
-<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">mvc:annotation-driven</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">mvc:message-converters</span> <span class="attr">register-defaults</span>=<span class="string">"true"</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">bean</span> <span class="attr">class</span>=<span class="string">"org.springframework.http.converter.StringHttpMessageConverter"</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">property</span> <span class="attr">name</span>=<span class="string">"supportedMediaTypes"</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">list</span>&gt;</span></span><br><span class="line">                    <span class="tag">&lt;<span class="name">value</span>&gt;</span>text/html;charset=UTF-8<span class="tag">&lt;/<span class="name">value</span>&gt;</span></span><br><span class="line">                    <span class="tag">&lt;<span class="name">value</span>&gt;</span>application/json;charset=UTF-8<span class="tag">&lt;/<span class="name">value</span>&gt;</span></span><br><span class="line">                    <span class="tag">&lt;<span class="name">value</span>&gt;</span>text/plain;charset=UTF-8<span class="tag">&lt;/<span class="name">value</span>&gt;</span></span><br><span class="line">                    <span class="tag">&lt;<span class="name">value</span>&gt;</span>application/xml;charset=UTF-8<span class="tag">&lt;/<span class="name">value</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;/<span class="name">list</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;/<span class="name">property</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">bean</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">mvc:message-converters</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">mvc:annotation-driven</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-<p>json有两种格式{}键值对[]数组，两者相互嵌套构成最基本的使用</p>
-<p>响应的基本类型：</p>
-<ul>
-<li>基本类型；直接返回</li>
-<li>对象：直接返回可以转化为json</li>
-<li>数组与集合</li>
-<li>map：可以用来处理再加工json</li>
-</ul>
-<p>请求的参数类型：</p>
-<ul>
-<li>基本数据类型</li>
-<li>POJO类型：name一致可以直接映射</li>
-<li>数组类型</li>
-<li>集合类型：将集合包装到一个pojo</li>
-</ul>
-<p>@RestContronller=@Controller+@ResponseBody</p>
-<p>作用在类上</p>
-<p>angularJS相关：</p>
-<ol>
-<li>新建模块：var app = angular.module(“json”,[]);相当于工程</li>
-<li>建立控制器controller，app.controller(“myJson”,function ($scope,$http)</li>
-<li>编写函数</li>
-</ol>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2019/09/07/SSM整合相关/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-java面试题（一）" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h1 id="java面试题（一）"><a href="#java面试题（一）" class="headerlink" title="java面试题（一）"></a>java面试题（一）</h1><ol>
-<li><p>object类有什么方法？</p>
-<ul>
-<li>clone保护方法，实现对象的浅复制，只有实现了Cloneable接口才可以调用方法</li>
-<li>getClass获得运行时类型</li>
-<li>tostring</li>
-<li>finalize释放资源</li>
-<li>equals</li>
-<li>hashCode哈希查找</li>
-<li>wait，notify，notifyAll</li>
-</ul>
-</li>
-<li><p>结构化程序设计的三种基本结构？</p>
-<p>顺序，选择，结构 - 结构清晰，易阅读</p>
-</li>
-<li><p>按值传递与按引用传递</p>
-<p>java的基本数据类型和这种String（String str=“java）是按值传递，其他都是按引用传递</p>
-</li>
-<li><p>递归相关</p>
-</li>
-<li><p>jsp有哪些内置对象？</p>
-<p><strong>九内四域</strong></p>
-<ul>
-<li><p>Page：jsp被翻译成Servlet的对象引用</p>
-</li>
-<li><p>pageContext：域对象</p>
-</li>
-<li><p>request:请求对象</p>
-</li>
-<li><p>Respond：响应对象</p>
-</li>
-<li><p>Session：会话，可以作为域对象，一次会话有效</p>
-</li>
-<li><p>Application：整个应用范围</p>
-</li>
-<li><p>Out：输出对象</p>
-</li>
-<li><p>config：配置对象</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">page域：只能在当前JSP页面使用 （当前页面）</span><br><span class="line">request域：只能在一个请求中请求（转发）</span><br><span class="line">session域：只能在一次会话（session对象）中使用（私有的）</span><br><span class="line">context域：在一个web应用中使用（全局）</span><br></pre></td></tr></table></figure>
-
-<p>​</p>
-</li>
-</ul>
-</li>
-<li><p>抽象类是否可以实现接口，抽象类是否可以继承实体类？</p>
-<p>可以，可以</p>
-</li>
-<li><p>ActionContext，servletContext，pageContext的区别？</p>
-<ul>
-<li>ActionContext是当前的Action上下文环境可以获取到 request，session，ServletContext等有关对象的引用</li>
-<li>ServletContext是域对象只有一个，生命周期伴随整个web应用</li>
-<li>pageContext是jsp中最重要的一个内置对象，只对当前也有效，页面结束时被销毁</li>
-</ul>
-</li>
-<li><p>SpringMVC与Ajax的互调？</p>
-</li>
-<li><p>连接池的工作机制？</p>
-<p>连接池在创建的时候，将一定数量的数据库连接放入到连接池中，这些数据库连接数量是由最小连接数来设定的。无论这些连接有没有使用，连接池都保证只少拥有怎么多数量，最大连接数限定了这个线程池能占有的最大的连接数，当链接数量超过最大连接数时，这些请求将被加到等待队列中。</p>
-</li>
-<li><p>char占几个字符？</p>
-<p>与编码格式有关 gbk：2 utf-8:3 默认unicode：2</p>
-</li>
-<li><p>servlet有哪些方法？</p>
-<p>init（），service（），destory（）</p>
-</li>
-<li><p>List，Set，Map，Queue的线程安全性？</p>
-<p>除了Vector与Hashtable，其他都不安全</p>
-</li>
-<li><p>Spring的事务传递行为都有哪些和区别？</p>
-</li>
-<li><p>Redis 的常用命令与支持的数据类型</p>
-</li>
-<li><p>什么是缓存雪崩，如何避免</p>
-<ul>
-<li>缓存穿透：查询一个缓存不存在的数据，所以就要从数据库中查询。导致每次都要到数据库中查询，造成缓存穿透。</li>
-<li>缓存失效，所有的查询都落在数据库上，造成了雪崩。<ul>
-<li>解决方法：加锁排队，限流。</li>
-<li>数据yure</li>
-<li>二级缓存</li>
-<li>缓存永不过期</li>
-</ul>
-</li>
-</ul>
-</li>
-<li><p>常用的SQL优化</p>
-</li>
-<li><p>进位制转化</p>
-</li>
-<li><p>java应用发生OOM异常，有哪些原因，如何排查</p>
-</li>
-<li><p>BIO，NIO，AIO的区别</p>
-</li>
-<li><p>应用如何部署到Tomcat，tomcat集群如何搭建？多个Tomcat如何进行Session同步？</p>
-<p>放到webapp，server.xml配置</p>
-</li>
-<li><p>spring如何实现犯法的性能监控，列如统计方法的执行时长？</p>
-</li>
-<li><p>webservice的简单介绍？</p>
-<p>是一种跨语言和系统的远程调用技术，通过web进行调用的API</p>
-</li>
-<li><p>shiro的理解</p>
-<p>安全框架</p>
-</li>
-<li><p>jdk8的新特性</p>
-<p>Lambda，方法引用，函数式接口，stream，Optional，新的日期API</p>
-</li>
-<li><p>如何解决高并发与高负载</p>
-<p>静态化，数据库集群，表散列及缓存，负载均衡</p>
-</li>
-<li><p>java的内存溢出是如何造成的</p>
-<p>内存泄漏：不被使用变量或对象还在内存中占有储存空间</p>
-<p>内存溢出：指程序申请内存时，没有足够的内存供申请者使用</p>
-<p>内存泄漏最终会导致内存溢出</p>
-<p>原因：静态类集合，各种连接，变量不合理的作用域，内部类持有外部类，改变hash值</p>
-</li>
-<li><p>String，StringBuilder，StringBuffer的区别</p>
-</li>
-<li><p>使用递归实现二分法</p>
-</li>
-<li><p>如何跳出当前的嵌套循环</p>
-</li>
-<li><p>汉字在UTF-8和GB2312字符集分别暂用几个字符？</p>
-<p>3，2</p>
-</li>
-<li><p>写出GB2312的字符串转化为UTF-8的字符串代码</p>
-<p>​</p>
-</li>
-<li><p>String s = new String（“JJJ”）；创建了几个字符串对象</p>
-</li>
-<li><p>举例一些会造成内存溢出的情况</p>
-</li>
-<li><p>百万级的表，有哪些方法优化查询效率</p>
-</li>
-<li><p>不稳定排序是哪个？</p>
-</li>
-<li><p>二叉树</p>
-</li>
-<li><p>B/S，C/S，CMS，ERP，SQL，RDB英文中文</p>
-<p>browser   Client </p>
-<p>ERP：Enterprise Resource Planning 企业资源计划</p>
-<p>CRM：Customer Relationship Management 客户关系管理</p>
-<p>CMS：Content Management System 内容管理系统 </p>
-<p>SQL：Structured Query Language 结构化查询语言</p>
-</li>
-<li><p>百盒测试一般用于什么测试？</p>
-<p>用于程序的内部系统</p>
-</li>
-<li><p>FPT的默认端口，HTTP的默认端口 </p>
-<ul>
-<li>http 8080</li>
-<li>socks 1080</li>
-<li>ftp 21</li>
-<li>Telnet 23</li>
-<li>http 443</li>
-</ul>
-</li>
-<li><p>代码还没引用的情况下创建一个内部类？</p>
-</li>
-<li><p>sizeOF是不是java关键字</p>
-</li>
-<li><p>写出mapper.xml根据id查询某个表的一条数据？</p>
-</li>
-<li><p>抽象类和接口的区别。</p>
-</li>
-<li><p>统计整数二进制表示1的个数</p>
-<p>   // n为自然数<br>​    public static int count(int n) {<br>​        int count = 0;<br>​        while (n &gt; 0) {<br>​            count++;<br>​            n = n &amp; (n - 1);<br>​        }<br>​        return count;<br>​    }</p>
-</li>
-<li><p>定义一个哈希表的成员和方法</p>
-</li>
-<li><p>遍历map集合</p>
-</li>
-<li><p>Java.io.File里面哪些方法</p>
-</li>
-<li><p>如何把List集合从后台传递到页面</p>
-</li>
-<li><p>delete和drop的区别</p>
-</li>
-<li><p>如何进行冲突管理</p>
-</li>
-<li><p>快捷键列举</p>
-</li>
-<li><p>什么是shell</p>
-</li>
-<li><p>遇到最难的问题有哪些，如何解决他们的，有什么收获？</p>
-</li>
-<li><p>常用的类，包，接口，异常，各7个</p>
-</li>
-<li><p>jsp中的两种跳转方式</p>
-</li>
-<li><p>业务并发时如何保持业务数据的一致性</p>
-</li>
-<li><p>如何实现自定义排序，java比价器</p>
-</li>
-<li><p>@requestbody与@RespondBody的意义与区别</p>
-</li>
-<li><p>如何获取当前月份有多少天？</p>
-</li>
-<li><p>Spring的interceptor如何实现的</p>
-</li>
-<li><p>java的8种基本数据类型</p>
-</li>
-<li><p>如何判断linux文件是否被篡改过？</p>
-</li>
-<li><p>TCp与UDP的区别，级对HTTP的理解</p>
-</li>
-<li><p>如何防止表单的重复提交</p>
-</li>
-<li><p>ajax如何改成同步</p>
-</li>
-<li><p>如何服务降级</p>
-</li>
-<li><p>负载均衡原理</p>
-</li>
-<li><p>索引的优点和缺点</p>
-</li>
-<li><p>分布式锁相关</p>
-</li>
-<li><p>http证书放在那里</p>
-</li>
-</ol>
-<p>后台管理系统:管理商品、订单、类目、商品规格属性、用户管理以及内容发布等功能。<br>前台系统:用户可以在前台系统中进行注册、登录、浏览商品、首页、下单等操作。</p>
-<p>会员系统:用户可以在该系统中查询已下的订单、收藏的商品、我的优惠券、团购等信息。<br>订单系统:</p>
-<p>搜索系统:</p>
-<p>会员登录系统:为多个系统之间</p>
-<p>“</p>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2019/09/07/java面试题（一）/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-java面试copy" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h1 id="java面试copy"><a href="#java面试copy" class="headerlink" title="java面试copy"></a>java面试copy</h1><ol>
-<li>常用集合</li>
-</ol>
-<ul>
-<li>collection单列<ul>
-<li>list有序不可重复<ul>
-<li>arrayList查询快增删慢</li>
-<li>linkedList增删慢查询慢</li>
-<li>vector线程安全</li>
-</ul>
-</li>
-<li>set无序可重复<ul>
-<li>HashSet无序（遍历）- LinkHashSet</li>
-<li>TreeSet有序</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>map双列<ul>
-<li>hashMap无序，线程不安全</li>
-<li>HashTable无序，线程安全</li>
-<li>TreeMap有序</li>
-</ul>
-</li>
-</ul>
-<ol start="2">
-<li><p>IO流</p>
-<ul>
-<li>字符流<ul>
-<li>Reader输入流<ul>
-<li>inputStreamReater转换流，字节到字符-FileReader</li>
-<li>BufferReader缓冲流</li>
-</ul>
-</li>
-<li>Writer输出流<ul>
-<li>OutputStreamWriter转换流，字符到字节- FileWirter</li>
-<li>BufferedWriter缓冲流</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>字节流<ul>
-<li>inputStream<ul>
-<li>FileInputStream</li>
-<li>BufferedInputStream</li>
-</ul>
-</li>
-<li>OutputStream<ul>
-<li>FileOutputStream</li>
-<li>BufferedOutStream</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-<ol start="3">
-<li>进程与线程</li>
-</ol>
-<p>进程：具有一定独立功能的程序是操作系统进行资源调度的单位</p>
-<p>线程：是进程的一个实体，是CPU调度的最小执行单元</p>
-<ol start="4">
-<li>线程相关</li>
-</ol>
-<ul>
-<li>通过继承Thread类或实现Runnable接口编写多线程</li>
-<li>synchronized（锁对象）{}</li>
-<li>sleep（）在执行线程的时候主动让出CPU，在指定时间后继续向下执行，不释放同步资源锁。wait（）方法让当前线程暂时退出并让出同步锁，以便让其他线程得到资源继续运行。调用notify（）后解除wait状态参与竞争。</li>
-<li>线程状态</li>
-</ul>
-<ol start="5">
-<li><p>线程安全的饿汉式</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">SingletonClass</span></span>&#123;</span><br><span class="line">  <span class="function"><span class="keyword">private</span> <span class="title">SingletonClass</span><span class="params">()</span></span>&#123;&#125;</span><br><span class="line">  </span><br><span class="line">  <span class="keyword">private</span> <span class="keyword">static</span> SingletonClass instance = <span class="keyword">null</span>;</span><br><span class="line">  </span><br><span class="line">  <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> Singleton <span class="title">getInstance</span><span class="params">()</span></span>&#123;</span><br><span class="line">    <span class="keyword">if</span>(instance == <span class="keyword">null</span>)&#123;</span><br><span class="line">      <span class="keyword">synchronized</span>(SingletonClass.class)&#123;</span><br><span class="line">        <span class="keyword">if</span>(instance == <span class="keyword">null</span>)&#123;</span><br><span class="line">          instance = <span class="keyword">new</span> SingletonClass();</span><br><span class="line">        &#125;</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> instance;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<ol start="6">
-<li><p>状态码</p>
-<p>200 OK </p>
-<p>302 重定向</p>
-<p>400 bad request</p>
-<p>401 未授权</p>
-<p>403 拒绝</p>
-<p>404 资源不存在</p>
-<p>500 服务端错误</p>
-<p>503 服务不可用</p>
-</li>
-</ol>
-</li>
-</ol>
-</li>
-</ol>
-<p>7.get与post</p>
-<p>​    get：地址栏显示（不安全），携带少量数据</p>
-<p>​    post：地址栏不显示，可提交大量数据</p>
-<p>8.Cookie与session</p>
-<p>cookie：保存在客户端，数据不安全，且存量有限。20分钟后生命周期</p>
-<p>session：保存在客服端。相对安全，且存量较大。20分钟未访问则销毁</p>
-<ol start="9">
-<li><p>Ajax的优势</p>
-<p>1.异步模式，提升用户体验</p>
-<p>2.优化传输，减少不必要的数据往返</p>
-<p>3.引擎在客户端运行，减少服务器负载</p>
-</li>
-</ol>
-<p>10.索引的优缺点</p>
-<p>优：</p>
-<ul>
-<li>加快搜索速度</li>
-<li>唯一索引确保每一行数据的唯一性</li>
-<li>可以优化隐藏器，提高系统性能</li>
-</ul>
-<p>缺：</p>
-<ul>
-<li>插入删除 修改 维护速度下降</li>
-<li>占用物理和数据空间</li>
-</ul>
-<p>11.事务</p>
-<p>ACID：</p>
-<p>a:原子性 d:一致性 c：隔离性 d：持久性</p>
-<ul>
-<li>脏读：读未提交</li>
-<li>不可重复度：两次读到的数据不一致</li>
-<li>虚读：</li>
-</ul>
-<p>隔离级别：</p>
-<ul>
-<li>读未提交：未解决任何问题</li>
-<li>读以提交：解决脏读</li>
-<li>可重复读：解决脏读，不可重复读</li>
-<li>串行化：所有问题</li>
-</ul>
-<p>MySQL:可重复读  Oracle：读已提交</p>
-<p>12.Oracle是如何分页的</p>
-<p>rownum  ：select * from </p>
-<p>  ( select rownum r,a from tabName where rownum &lt;= 20 ) </p>
-<p>where r &gt; 10 </p>
-<p>13.Redis数据库</p>
-<p>redis是一个基于内存的高性能的K-V数据库</p>
-<p>应用场景：</p>
-<ul>
-<li>会话缓存</li>
-<li>全页缓存</li>
-<li>队列</li>
-<li>排行榜/计数器</li>
-<li>发布/订阅</li>
-</ul>
-<p>优点：</p>
-<ul>
-<li>速度快</li>
-<li>支持类型丰富，string，list，set，sorted set，hash</li>
-<li>支持事务</li>
-<li>特性丰富</li>
-</ul>
-<p>特点：数据库容易受到物理内存限制，不能作海量数据的高性能读写</p>
-<p>redis比memcached的优势：</p>
-<p>redis数据类型更丰富</p>
-<p>速度快</p>
-<p>可持久化</p>
-<p>13.mysql性能优化</p>
-<ul>
-<li>只要一行数据时用limit 1</li>
-<li>选择正确的存储引擎</li>
-<li>用 not Exist代替not in</li>
-<li>对操作符优化</li>
-<li>分库分表</li>
-<li>读写分离</li>
-</ul>
-<p>14.拦截器与过滤器的区别</p>
-<ul>
-<li>拦截器基于反射，过滤器基于函数回调</li>
-<li>拦截器基于serlvet容器，过滤器依赖servlet容器</li>
-<li>拦截器只能对action起作用，过滤器可以作用所有的请求</li>
-<li>拦截器可以action上下文，值栈里的对象，而过滤器不能</li>
-<li>拦截器在action的生命周期，拦截器可以被多次调用，而过滤器只能在初始化是调用一次</li>
-</ul>
-<p>15.SpringMVC的执行流程</p>
-<p>1.用户请求——前端控制器——（handler）——处理器映射器（handlerMaping）——（返回处理器执行链）——前——（handler）——处理器适配器（hadlerAdaper）——（执行handler）——handler——（modeandview）——前——（请求视图解析器）——视图解析器（viewResolver）——返回view对象——渲染视图——饷应用户</p>
-<p>16.springMVC的 注解</p>
-<ul>
-<li><p>@RequestMapping请求url映射</p>
-</li>
-<li><p>@RequestBody将jason转换为java</p>
-</li>
-<li><p>@ResponseBody将对象转化为json</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;mvc:annotation-driven&gt;//开启注解</span><br></pre></td></tr></table></figure>
-
-</li>
-</ul>
-<p>17.springMVC与structs2的区别</p>
-<ul>
-<li>springMVC的入口是一个servlet，struts2是一个filter过滤器</li>
-<li>springMVC基于方法开发，传递方法通过方法形参，可单例可多例，struts2是基于类开发的传递参数是通过类的属性，只能设计为多例</li>
-<li>struts2采用值栈存储请求和响应数据，spring通过参数解析器把将request对象内容进行方法形参，将响应数据和页面封装成ModeandView，最后将模型数据传输到页面。jsp视图解析器默认使用jstl。</li>
-<li>Struts有漏洞</li>
-</ul>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2019/09/07/java面试copy/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-javaSE总结及面试准备" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h2 id="javaSE总结及面试准备"><a href="#javaSE总结及面试准备" class="headerlink" title="javaSE总结及面试准备"></a>javaSE总结及面试准备</h2><h2 id="1-java基础语法"><a href="#1-java基础语法" class="headerlink" title="1.java基础语法"></a>1.java基础语法</h2><p><strong>特点</strong>：面向对象 跨平台 多线程 安全</p>
-<p>1.jre与jdk</p>
-<p>JVM:java虚拟机 </p>
-<p>JRE:java运行环境，包含jvm和java核心类库</p>
-<p>JDK:java开发工具，包含了JRE和开发工具</p>
-<p>常量分类：字符串，整数，小数，字符，布尔，空</p>
-<p>基本数据类型： </p>
-<table>
-<thead>
-<tr>
-<th align="center">数据类型</th>
-<th align="center">关键字</th>
-<th align="center">内存占用</th>
-<th align="center">取值范围</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center">整数</td>
-<td align="center">byte</td>
-<td align="center">1</td>
-<td align="center">负的2的7次方 ~ 2的7次方-1(-128~127)</td>
-</tr>
-<tr>
-<td align="center"></td>
-<td align="center">short</td>
-<td align="center">2</td>
-<td align="center">负的2的15次方 ~ 2的15次方-1(-32768~32767)</td>
-</tr>
-<tr>
-<td align="center"></td>
-<td align="center">int</td>
-<td align="center">4</td>
-<td align="center">负的2的31次方 ~ 2的31次方-1</td>
-</tr>
-<tr>
-<td align="center"></td>
-<td align="center">long</td>
-<td align="center">8</td>
-<td align="center">负的2的63次方 ~ 2的63次方-1</td>
-</tr>
-<tr>
-<td align="center">浮点数</td>
-<td align="center">float</td>
-<td align="center">4</td>
-<td align="center">1.401298e-45 ~ 3.402823e+38</td>
-</tr>
-<tr>
-<td align="center"></td>
-<td align="center">double</td>
-<td align="center">8</td>
-<td align="center">4.9000000e-324 ~ 1.797693e+308</td>
-</tr>
-<tr>
-<td align="center">字符</td>
-<td align="center">char</td>
-<td align="center">2</td>
-<td align="center">0-65535</td>
-</tr>
-<tr>
-<td align="center">布尔</td>
-<td align="center">boolean</td>
-<td align="center">1</td>
-<td align="center">true，false</td>
-</tr>
-</tbody></table>
-<p>​    e+38表示是乘以10的38次方，同样，e-45表示乘以10的负45次方。</p>
-<p>标识符：由字母数字下划线$组成，第一个不能为数字，不能使用关键字，区分大小写。</p>
-<p>类型转换：</p>
-<ul>
-<li>自动类型转换：小到大，直接书写即可</li>
-<li>强制类型转换：大到小，<img src="C:%5CUsers%5CWangKe%5CDesktop%5CJavaEE%E9%9A%8F%E7%AC%94%5C%E5%93%81%E4%BC%98%E8%B4%AD%E5%8F%8D%E6%80%9D%E5%8F%8A%E6%80%BB%E7%BB%93%5Casset%5C%E5%9B%BE%E7%89%871.png" alt="图片1"></li>
-</ul>
-<p>java的内存分配：</p>
-<table>
-<thead>
-<tr>
-<th>区域名称</th>
-<th>作用</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>寄存器</td>
-<td>给CPU使用，和我们开发无关。</td>
-</tr>
-<tr>
-<td>本地方法栈</td>
-<td>JVM在使用操作系统功能的时候使用，和我们开发无关。</td>
-</tr>
-<tr>
-<td>方法区</td>
-<td>存储可以运行的class文件。</td>
-</tr>
-<tr>
-<td>堆内存</td>
-<td>存储对象或者数组，new来创建的，都存储在堆内存。</td>
-</tr>
-<tr>
-<td>方法栈</td>
-<td>方法运行时使用的内存，比如main方法运行，进入方法栈中执行。</td>
-</tr>
-</tbody></table>
-<p>权限修饰符：</p>
-<p>修饰符      同一个类         同一个包      子类        无关类</p>
-<p>private           1            </p>
-<p>默认        1            1            </p>
-<p>protect        1            1            1                </p>
-<p>public        1            1            1        1</p>
-<p>静态的成员方法只能访问静态成员</p>
-<p>多态：同一个对象在不同的时刻表现的不同的状态</p>
-<p>多态的前提：</p>
-<ul>
-<li>有继承</li>
-<li>有方法的重写</li>
-<li>父类引用指向子类对象</li>
-</ul>
-<p>抽象类和接口的区别：</p>
-<ul>
-<li>成员区别<ul>
-<li>抽象类：有构造方法，有抽象方法有非抽象方法（有抽象方法的类叫抽象类，没有方法体的方法叫抽象方法）。</li>
-<li>接口：常量，抽象方法</li>
-</ul>
-</li>
-<li>关系区别<ul>
-<li>类与类： 单继承</li>
-<li>类与接口：多实现</li>
-<li><strong>接口与接口</strong>：多继承</li>
-</ul>
-</li>
-<li>设计理论<ul>
-<li>抽象类：对类进行抽象，包括属性和行为</li>
-<li>接口：对行为进行抽象，主要是行为</li>
-</ul>
-</li>
-</ul>
-<p>Math类：</p>
-<table>
-<thead>
-<tr>
-<th>方法名    方法名</th>
-<th>说明</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>public static int   abs(int a)</td>
-<td>返回参数的绝对值</td>
-</tr>
-<tr>
-<td>public static double ceil(double a)</td>
-<td>返回大于或等于参数的最小double值，等于一个整数</td>
-</tr>
-<tr>
-<td>public static double floor(double a)</td>
-<td>返回小于或等于参数的最大double值，等于一个整数</td>
-</tr>
-<tr>
-<td>public   static int round(float a)</td>
-<td>按照四舍五入返回最接近参数的int</td>
-</tr>
-<tr>
-<td>public static int   max(int a,int b)</td>
-<td>返回两个int值中的较大值</td>
-</tr>
-<tr>
-<td>public   static int min(int a,int b)</td>
-<td>返回两个int值中的较小值</td>
-</tr>
-<tr>
-<td>public   static double pow (double a,double b)</td>
-<td>返回a的b次幂的值</td>
-</tr>
-<tr>
-<td>public   static double random()</td>
-<td>返回值为double的正值，[0.0,1.0)</td>
-</tr>
-</tbody></table>
-<p>System：</p>
-<ul>
-<li>System类的常用方法 </li>
-</ul>
-<table>
-<thead>
-<tr>
-<th>方法名</th>
-<th>说明</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>public   static void exit(int status)</td>
-<td>终止当前运行的   Java   虚拟机，非零表示异常终止</td>
-</tr>
-<tr>
-<td>public   static long currentTimeMillis()</td>
-<td>返回当前时间(以毫秒为单位)</td>
-</tr>
-</tbody></table>
-<p>冒泡排序：</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">    冒泡排序：</span></span><br><span class="line"><span class="comment">        一种排序的方式，对要进行排序的数据中相邻的数据进行两两比较，将较大的数据放在后面，</span></span><br><span class="line"><span class="comment">        依次对所有的数据进行操作，直至所有数据按要求完成排序</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">ArrayDemo</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        <span class="comment">//定义一个数组</span></span><br><span class="line">        <span class="keyword">int</span>[] arr = &#123;<span class="number">24</span>, <span class="number">69</span>, <span class="number">80</span>, <span class="number">57</span>, <span class="number">13</span>&#125;;</span><br><span class="line">        System.out.println(<span class="string">"排序前："</span> + arrayToString(arr));</span><br><span class="line"></span><br><span class="line">        <span class="comment">// 这里减1，是控制每轮比较的次数</span></span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> x = <span class="number">0</span>; x &lt; arr.length - <span class="number">1</span>; x++) &#123;</span><br><span class="line">            <span class="comment">// -1是为了避免索引越界，-x是为了调高比较效率</span></span><br><span class="line">            <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; arr.length - <span class="number">1</span> - x; i++) &#123;</span><br><span class="line">                <span class="keyword">if</span> (arr[i] &gt; arr[i + <span class="number">1</span>]) &#123;</span><br><span class="line">                    <span class="keyword">int</span> temp = arr[i];</span><br><span class="line">                    arr[i] = arr[i + <span class="number">1</span>];</span><br><span class="line">                    arr[i + <span class="number">1</span>] = temp;</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        System.out.println(<span class="string">"排序后："</span> + arrayToString(arr));</span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">//把数组中的元素按照指定的规则组成一个字符串：[元素1, 元素2, ...]</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> String <span class="title">arrayToString</span><span class="params">(<span class="keyword">int</span>[] arr)</span> </span>&#123;</span><br><span class="line">        StringBuilder sb = <span class="keyword">new</span> StringBuilder();</span><br><span class="line">        sb.append(<span class="string">"["</span>);</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; arr.length; i++) &#123;</span><br><span class="line">            <span class="keyword">if</span> (i == arr.length - <span class="number">1</span>) &#123;</span><br><span class="line">                sb.append(arr[i]);</span><br><span class="line">            &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">                sb.append(arr[i]).append(<span class="string">", "</span>);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        sb.append(<span class="string">"]"</span>);</span><br><span class="line">        String s = sb.toString();</span><br><span class="line">        <span class="keyword">return</span> s;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>Arrays：</p>
-<table>
-<thead>
-<tr>
-<th>方法名</th>
-<th>说明</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>public static String toString(int[] a)</td>
-<td>返回指定数组的内容的字符串表示形式</td>
-</tr>
-<tr>
-<td>public static void sort(int[] a)</td>
-<td>按照数字顺序排列指定的数组</td>
-</tr>
-</tbody></table>
-<p>基本类型包装类：好吃在于定义更多的功能操作数据。用于基本数据类型与字符串之间的转化。</p>
-<p>基本类型对应的包装类</p>
-<table>
-<thead>
-<tr>
-<th>基本数据类型</th>
-<th>包装类</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>byte</td>
-<td>Byte</td>
-</tr>
-<tr>
-<td>short</td>
-<td>Short</td>
-</tr>
-<tr>
-<td>int</td>
-<td>Integer</td>
-</tr>
-<tr>
-<td>long</td>
-<td>Long</td>
-</tr>
-<tr>
-<td>float</td>
-<td>Float</td>
-</tr>
-<tr>
-<td>double</td>
-<td>Double</td>
-</tr>
-<tr>
-<td>char</td>
-<td>Character</td>
-</tr>
-<tr>
-<td>boolean</td>
-<td>Boolean</td>
-</tr>
-</tbody></table>
-<p>Integer类构造方法</p>
-<table>
-<thead>
-<tr>
-<th>方法名</th>
-<th>说明</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>public Integer(int   value)</td>
-<td>根据 int 值创建 Integer 对象(过时)</td>
-</tr>
-<tr>
-<td>public Integer(String s)</td>
-<td>根据 String 值创建 Integer 对象(过时)</td>
-</tr>
-<tr>
-<td>public static Integer valueOf(int i)</td>
-<td>返回表示指定的 int 值的 Integer   实例</td>
-</tr>
-<tr>
-<td>public static Integer valueOf(String s)</td>
-<td>返回一个保存指定值的 Integer 对象 String</td>
-</tr>
-</tbody></table>
-<ul>
-<li><p>int转换为String</p>
-<ul>
-<li><p>转换方式</p>
-<ul>
-<li>方式一：直接在数字后加一个空字符串</li>
-<li>方式二：通过String类静态方法valueOf()</li>
-</ul>
-</li>
-<li><p>示例代码</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">IntegerDemo</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        <span class="comment">//int --- String</span></span><br><span class="line">        <span class="keyword">int</span> number = <span class="number">100</span>;</span><br><span class="line">        <span class="comment">//方式1</span></span><br><span class="line">        String s1 = number + <span class="string">""</span>;</span><br><span class="line">        System.out.println(s1);</span><br><span class="line">        <span class="comment">//方式2</span></span><br><span class="line">        <span class="comment">//public static String valueOf(int i)</span></span><br><span class="line">        String s2 = String.valueOf(number);</span><br><span class="line">        System.out.println(s2);</span><br><span class="line">        System.out.println(<span class="string">"--------"</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-</li>
-</ul>
-</li>
-<li><p>String转换为int</p>
-<ul>
-<li><p>转换方式</p>
-<ul>
-<li>方式一：先将字符串数字转成Integer，再调用valueOf()方法</li>
-<li>方式二：通过Integer静态方法parseInt()进行转换</li>
-</ul>
-</li>
-<li><p>示例代码</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">IntegerDemo</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        <span class="comment">//String --- int</span></span><br><span class="line">        String s = <span class="string">"100"</span>;</span><br><span class="line">        <span class="comment">//方式1：String --- Integer --- int</span></span><br><span class="line">        Integer i = Integer.valueOf(s);</span><br><span class="line">        <span class="comment">//public int intValue()</span></span><br><span class="line">        <span class="keyword">int</span> x = i.intValue();</span><br><span class="line">        System.out.println(x);</span><br><span class="line">        <span class="comment">//方式2</span></span><br><span class="line">        <span class="comment">//public static int parseInt(String s)</span></span><br><span class="line">        <span class="keyword">int</span> y = Integer.parseInt(s);</span><br><span class="line">        System.out.println(y);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-</li>
-</ul>
-</li>
-</ul>
-<h2 id="2-Date类："><a href="#2-Date类：" class="headerlink" title="2.Date类："></a>2.Date类：</h2><p>Date类构造方法</p>
-<table>
-<thead>
-<tr>
-<th>方法名</th>
-<th>说明</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>public Date()</td>
-<td>分配一个 Date对象，并初始化，以便它代表它被分配的时间，精确到毫秒</td>
-</tr>
-<tr>
-<td>public Date(long date)</td>
-<td>分配一个 Date对象，并将其初始化为表示从标准基准时间起指定的毫秒数</td>
-</tr>
-</tbody></table>
-<p>常用方法</p>
-<table>
-<thead>
-<tr>
-<th>方法名</th>
-<th>说明</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>public long getTime()</td>
-<td>获取的是日期对象从1970年1月1日 00:00:00到现在的毫秒值</td>
-</tr>
-<tr>
-<td>public void setTime(long time)</td>
-<td>设置时间，给的是毫秒值</td>
-</tr>
-</tbody></table>
-<ul>
-<li><p>SimpleDateFormat类概述</p>
-<p>​    SimpleDateFormat是一个具体的类，用于以区域设置敏感的方式格式化和解析日期。</p>
-<p>​    我们重点学习日期格式化和解析</p>
-</li>
-<li><p>SimpleDateFormat类构造方法</p>
-<table>
-<thead>
-<tr>
-<th>方法名</th>
-<th>说明</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>public   SimpleDateFormat()</td>
-<td>构造一个SimpleDateFormat，使用默认模式和日期格式</td>
-</tr>
-<tr>
-<td>public SimpleDateFormat(String pattern)</td>
-<td>构造一个SimpleDateFormat使用给定的模式和默认的日期格式</td>
-</tr>
-</tbody></table>
-</li>
-<li><p>SimpleDateFormat类的常用方法</p>
-<ul>
-<li>格式化(从Date到String)<ul>
-<li>public final String format(Date date)：将日期格式化成日期/时间字符串</li>
-</ul>
-</li>
-<li>解析(从String到Date)<ul>
-<li>public Date parse(String source)：从给定字符串的开始解析文本以生成日期</li>
-</ul>
-</li>
-</ul>
-</li>
-<li><p>示例代码</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">SimpleDateFormatDemo</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> <span class="keyword">throws</span> ParseException </span>&#123;</span><br><span class="line">        <span class="comment">//格式化：从 Date 到 String</span></span><br><span class="line">        Date d = <span class="keyword">new</span> Date();</span><br><span class="line"><span class="comment">//        SimpleDateFormat sdf = new SimpleDateFormat();</span></span><br><span class="line">        SimpleDateFormat sdf = <span class="keyword">new</span> SimpleDateFormat(<span class="string">"yyyy年MM月dd日 HH:mm:ss"</span>);</span><br><span class="line">        String s = sdf.format(d);</span><br><span class="line">        System.out.println(s);</span><br><span class="line">        System.out.println(<span class="string">"--------"</span>);</span><br><span class="line"></span><br><span class="line">        <span class="comment">//从 String 到 Date</span></span><br><span class="line">        String ss = <span class="string">"2048-08-09 11:11:11"</span>;</span><br><span class="line">        <span class="comment">//ParseException</span></span><br><span class="line">        SimpleDateFormat sdf2 = <span class="keyword">new</span> SimpleDateFormat(<span class="string">"yyyy-MM-dd HH:mm:ss"</span>);</span><br><span class="line">        Date dd = sdf2.parse(ss);</span><br><span class="line">        System.out.println(dd);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-</li>
-</ul>
-<h2 id="3-java基础面试相关"><a href="#3-java基础面试相关" class="headerlink" title="3. java基础面试相关"></a>3. java基础面试相关</h2>
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2019/09/07/javaSE总结及面试准备/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-博学谷面试题" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+            <article id="post-博学谷面试题" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
     <div class="article-entry" itemprop="articleBody">
@@ -1517,6 +367,32 @@
       
 
       
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    
+                    <div class="reward-box-item">
+                      <img class="reward-img" src="/assets/wexinpay.png">
+                      <span class="reward-type">微信</span>
+                    </div>
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
+      
     </div>
     <div class="article-info article-info-index">
       
@@ -1524,16 +400,79 @@
       
 
       
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2019/09/07/博学谷面试题/">展开全文 >></a>
-        </p>
-      
 
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
+        </div>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2019/09/07/博学谷面试题/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
       
       <div class="clearfix"></div>
     </div>
   </div>
 </article>
+
+  
+<nav id="article-nav">
+  
+    <a href="/2019/09/07/javaSE总结及面试准备/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          (no title)
+        
+      </div>
+    </a>
+  
+  
+</nav>
+
 
 <aside class="wrap-side-operation">
     <div class="mod-side-operation">
@@ -1553,8 +492,14 @@
 
 
 
+  
+  
+  
 
   
+
+  
+
   
 
 
@@ -1577,8 +522,8 @@
     <script>
 	var yiliaConfig = {
 		mathjax: false,
-		isHome: true,
-		isPost: false,
+		isHome: false,
+		isPost: true,
 		isArchive: false,
 		isTag: false,
 		isCategory: false,
